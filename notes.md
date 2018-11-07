@@ -8,7 +8,7 @@ Pada contoh ini akan ditambahkan native method di kelas Runtime.java
 1. Buatlah deklarasi method pada kelas yang akan ditambahkan.
 ```
 public native void someMethod();
-``
+```
 2. Buka Runtime.c lalu buatlah pemanggilan JNI untuk native method yang ingin dibuat
 ```
 JNIEXPORT jint JNICALL
