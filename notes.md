@@ -1,9 +1,9 @@
-### 07 November 2018
+## 07 November 2018
 
 Kali ini kita akan menambahkan native method di openjdk dan akan memanggil fungsi yang ada di VM.
 Caranya adalah petama kita menambahkan deklarasi native method dan JNI call nya di module jdk. Kemudian setelah itu kita menambahkan implementasi native method tersebut di module hotspot (virtual machine)
 
-#### Buat native method di module jdk
+### Buat native method di module jdk
 
 Pada contoh ini akan ditambahkan native method di kelas Runtime.java
 Buatlah deklarasi method pada kelas yang akan ditambahkan.
@@ -23,7 +23,7 @@ Tambahkan JNI call tadi ke mapping file, untuk kasus ini akan ditambhakan di
 jdk/make/mapfiles/libjava/mapfile-vers
 ```
 
-#### Tambahkan implementasi di module hotspot
+### Tambahkan implementasi di module hotspot
 Pada share/vm/prims/jvm.h (file header jvm) tambahkan deklarasi method
 ```c++
 JNIEXPORT void JNICALL
@@ -48,3 +48,6 @@ make/linux/makefiles/mapfile-vers-debug
 make/linux/makefiles/mapfile-vers-product
 make/solaris/makefiles/mapfile-vers
 ```
+
+## 08 November 2018
+Paraller scavange garbage collector on Java 8
