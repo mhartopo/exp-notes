@@ -51,3 +51,13 @@ make/solaris/makefiles/mapfile-vers
 
 ## 08 November 2018
 Paraller scavange garbage collector on Java 8
+### Debugging Open JDK
+Set build openjdk untuk mode fast debug
+```bash
+# set debug
+bash ./configure --enable-debug
+# compile ulang
+make all CONF=linux-x86_64-normal-server-fastdebug
+```
+
+lengkapnya [di sini](https://www.safaribooksonline.com/library/view/openjdk-cookbook/9781849698405/ch08s05.html)
