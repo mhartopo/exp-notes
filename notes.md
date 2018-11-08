@@ -38,7 +38,7 @@ JVM_ENTRY_NO_ENV(void, JVM_SomeMethod(void))
 JVM_END
 ```
 
-Tambahkan jvm wrapper tadi ke dalam mapfile, tiap OS akan berbeda format, ikuti format yang ada.
+Tambahkan jvm wrapper tadi ke dalam mapfile, tiap architecture akan berbeda format, ikuti format yang ada.
 ```
 make/aix/makefiles/mapfile-vers-debug
 make/aix/makefiles/mapfile-vers-product
